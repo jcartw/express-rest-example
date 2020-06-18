@@ -30,7 +30,7 @@ app.post("/states", (req, res) => {
   };
 
   stateDictionary[newState.uuid] = newState;
-  return res.json(newState);
+  return res.status(201).json(newState);
 });
 
 // Read
@@ -80,6 +80,16 @@ app.patch("/states/:stateUuid", (req, res) => {
 });
 
 // Delete
+
+app.delete("/states", (req, res) => {
+  // delete all states
+
+  Object.keys(stateDictionary).map((key) => {
+    delete stateDictionary[key];
+  });
+
+  return res.status(204).end();
+});
 
 app.delete("/states/:stateUuid", (req, res) => {
   // delete the state identified by 'stateUuid'
