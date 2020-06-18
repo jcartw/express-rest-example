@@ -1,0 +1,24 @@
+{
+  "name": "express-rest-example",
+  "version": "1.0.0",
+  "description": "A simple express.js server with CRUD REST routes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcartw89/express-rest-example.git"
+  },
+  "author": "Justin Cartwright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcartw89/express-rest-example/issues"
+  },
+  "homepage": "https://github.com/jcartw89/express-rest-example#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
