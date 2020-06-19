@@ -1,9 +1,9 @@
 const { expect } = require("chai");
 const superagent = require("superagent");
 
-const PORT = process.env.PORT || 9000;
+const NODE_PORT = process.env.NODE_PORT || 9000;
 
-const baseUrl = `http://localhost:${PORT}`;
+const baseUrl = `http://localhost:${NODE_PORT}`;
 
 describe("State Routes", () => {
   let stateUuid;

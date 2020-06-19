@@ -8,7 +8,7 @@ USE `RestExample`;
 DROP TABLE IF EXISTS `State`;
 CREATE TABLE IF NOT EXISTS `State` (
   `id`             BIGINT NOT NULL AUTO_INCREMENT,
-  `uuid`           BINARY(36)   NOT NULL,
+  `uuid`           VARCHAR(36)   NOT NULL,
   `name`           VARCHAR(255) NOT NULL,
   `abbreviation`   VARCHAR(5)   NULL,
   `capital`        VARCHAR(255) NULL,
