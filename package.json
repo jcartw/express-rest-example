@@ -4,6 +4,7 @@
   "description": "A simple express.js server with CRUD REST routes",
   "main": "./src/server.js",
   "scripts": {
+    "start": "pm2 start ./pm2.config.json",
     "test": "mocha test/test.js",
     "pm2": "pm2 start ./pm2.config.json"
   },

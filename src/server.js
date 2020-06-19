@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const uuid = require("uuid");
 
-const PORT = process.env.PORT || 9000;
+const NODE_PORT = process.env.NODE_PORT || 9000;
 const app = express();
 
 app.use(morgan("common"));
@@ -111,6 +111,6 @@ app.use((req, res) => {
   return res.status(404).json({ statusCode: 404, message: "Not Found" });
 });
 
-app.listen(PORT, () => {
-  console.log(`starting server on port ${PORT}`);
+app.listen(NODE_PORT, () => {
+  console.log(`starting server on port ${NODE_PORT}`);
 });
