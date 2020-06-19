@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const superagent = require("superagent");
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 9000;
 
 const baseUrl = `http://localhost:${PORT}`;
 

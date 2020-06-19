@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "rest_server",
+      "cwd": ".",
+      "script": "./src/server.js",
+      "interpreter": "node_modules/.bin/nodemon",
+      "interpreter_args": "--inspect=5000 --ignore test/test.js",
+      "env": {
+        "PORT": 9000
+      }
+    }
+  ]
+}
