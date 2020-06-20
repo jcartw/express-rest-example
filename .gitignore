@@ -6,3 +6,7 @@ node_modules
 env.sh
 
 .bash_history
+
+.config
+
+.pm2
