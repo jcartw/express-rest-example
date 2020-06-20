@@ -7,6 +7,7 @@ Express REST Server Example
 ```
  docker run -it \
  -w /root \
+ --mount type=bind,source="$(pwd)",target=/root \
  node:12.8.1-stretch \
- /bin/bash
+ bash
 ```
