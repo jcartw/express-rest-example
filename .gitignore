@@ -4,3 +4,8 @@ node_modules
 .DS_Store
 
 env.sh
+
+.bash_history
+.config/
+.pm2/
+SCRATCH.md
