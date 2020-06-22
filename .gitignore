@@ -12,3 +12,5 @@ env.sh
 .pm2
 
 SCRATCH.md
+
+.mysql_history

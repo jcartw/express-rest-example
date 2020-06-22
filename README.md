@@ -28,5 +28,20 @@ If you have a mysql client on your host machine, attempt to connect and verify t
 ```
 docker run -it \
 --mount type=bind,source="$(pwd)",target=/root \
+--link mysql_cont \
 example/dev:1.00
 ```
+
+You can verify the mysql container link from within the dev container:
+
+- `mysql -uadmin -padmin -hmysql_cont -P3306`
+
+Load up the system data model:
+
+- `mysql -uadmin -padmin -hmysql_cont -P3306 < src/data-model.sql`
+
+# Install dependencies, start server, and run test inside of the container
+
+- install dependencies: `yarn install`
+- start server: `yarn start`
+- run tests: `yarn run test`
