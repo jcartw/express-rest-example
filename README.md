@@ -51,6 +51,8 @@ Load up the system data model:
 
 Docker compose is used to automate the workflow of dockerized applications.
 The configuration of your application is contained within the file `docker-compose.yml`.
+Note that `docker-compose` helps link the services together automatically, so there
+is no need to setup explicit links like when using the Docker CLI.
 
 - run dev container: `docker-compose run dev_cont`
 - load up system data model: `mysql -uadmin -padmin -hmysql_cont -P3306 < src/data-model.sql`
