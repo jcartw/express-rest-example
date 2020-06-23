@@ -43,5 +43,16 @@ Load up the system data model:
 # Install dependencies, start server, and run test inside of the container
 
 - install dependencies: `yarn install`
+- load up environment variables: `source env.sh`
+- start server: `yarn start`
+- run tests: `yarn run test`
+
+# Using Docker Compose
+
+Docker compose is used to automate the workflow of dockerized applications.
+The configuration of your application is contained within the file `docker-compose.yml`.
+
+- run dev container: `docker-compose run dev_cont`
+- load up system data model: `mysql -uadmin -padmin -hmysql_cont -P3306 < src/data-model.sql`
 - start server: `yarn start`
 - run tests: `yarn run test`

@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  mysql_cont:
+    image: example/mysql:1.00
+    ports:
+      - "4306:3306"
+  dev_cont:
+    image: example/dev:1.00
+    depends_on:
+      - mysql_cont
+    stdin_open: true
+    tty: true
+    volumes:
+      - type: bind
+        source: ./
+        target: /root
+    environment:
+      - NODE_PORT=9000
+      - MYSQL_HOST=mysql_cont
+      - MYSQL_PORT=3306
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DB_NAME=RestExample
