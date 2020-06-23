@@ -16,3 +16,7 @@ SCRATCH.md
 .mysql_history
 
 yarn-error.log
+
+.gitconfig
+
+.vscode-server

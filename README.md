@@ -58,3 +58,15 @@ is no need to setup explicit links like when using the Docker CLI.
 - load up system data model: `mysql -uadmin -padmin -hmysql_cont -P3306 < src/data-model.sql`
 - start server: `yarn start`
 - run tests: `yarn run test`
+
+# VS Dev Container
+- docs: https://code.visualstudio.com/docs/remote/containers
+
+- from the command palette, select: `Remote-Containers: Add Development Container Configuration Files..`
+- then select: `From 'docker-compose.yml'`
+
+Then from within the dev container:
+- load up system data model: `mysql -uadmin -padmin -hmysql_cont -P3306 < src/data-model.sql`
+- start server: `yarn start`
+- run tests: `yarn run test`
+

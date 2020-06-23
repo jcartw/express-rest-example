@@ -8,12 +8,6 @@ services:
     image: example/dev:1.00
     depends_on:
       - mysql_cont
-    stdin_open: true
-    tty: true
-    volumes:
-      - type: bind
-        source: ./
-        target: /root
     environment:
       - NODE_PORT=9000
       - MYSQL_HOST=mysql_cont
